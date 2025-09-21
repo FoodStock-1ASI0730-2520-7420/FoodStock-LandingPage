@@ -1,0 +1,726 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main-content {
+    /* Ajusta el padding superior para que el contenido no quede detrás del header fijo */
+    padding-top: 60px;
+}
+
+/* Títulos de sección */
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* ======================= */
+/* Header y Navegación */
+/* ======================= */
+.header {
+    background-color: #38bdf8;
+    /* Azul */
+    color: #fff;
+    padding: 20px 15px;
+    position: fixed;
+    /* Mantiene el header en la parte superior */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container img {
+    height: 60px;
+    /* Tamaño para el logo en la barra de navegación */
+    width: auto;
+    vertical-align: middle;
+    /* Alinea el icono con el texto si lo hay */
+    margin-right: 10px;
+}
+
+.logo-icon {
+    height: 60px;
+    /* Ajusta el tamaño del ícono según tu imagen */
+    width: auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ======================= */
+/* Botones de Idioma */
+/* ======================= */
+.language-switcher {
+    display: flex;
+    gap: 5px;
+}
+
+.toggle-lang {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-lang:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.toggle-lang.active {
+    background-color: #f97316;
+    /* Naranja para el botón activo */
+    color: #fff;
+}
+
+/* ===================================== */
+/* Sección Hero (Inicio) */
+/* ===================================== */
+.hero-section {
+    background-color: #e0f2f7;
+    /* Un azul claro para el fondo de la parte superior */
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    /* Usar flexbox para centrar el contenido */
+    flex-direction: column;
+    /* Apilar los elementos verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    min-height: 50vh;
+    /* Ocupa al menos la mitad de la altura de la ventana */
+}
+
+.hero-text {
+    max-width: 800px;
+    margin-bottom: 40px;
+    /* Espacio entre el texto y la imagen del plato */
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    /* Tamaño grande para "FoodStock" */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f97316;
+    /* Naranja para el botón */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0640f;
+    /* Naranja un poco más oscuro al pasar el ratón */
+}
+
+/* Contenedor de la imagen del plato con su propio fondo */
+.hero-image-container {
+    background-color: #ffe0b2;
+    /* Fondo naranja claro para la sección de la imagen */
+    width: 100%;
+    padding: 40px 20px;
+    /* Espacio interno para la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo-icon {
+    height: 400px;
+    /* Un poco más grande para el logo principal */
+    width: auto;
+    /* Mantiene la proporción */
+}
+
+.hero-main-image {
+    max-width: 100%;
+    /* Asegura que la imagen no se desborde */
+    height: auto;
+    border-radius: 10px;
+    /* Opcional: bordes redondeados para la imagen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Opcional: una sombra sutil */
+}
+
+/* Contenedor de la imagen del plato con su propio fondo */
+.hero-image-container {
+    background-color: #ffe0b2;
+    /* Fondo naranja claro para la sección de la imagen */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Eliminar el margin-left/right si existe alguno aquí que lo centre */
+}
+
+.hero-main-image {
+    max-width: 90%;
+    /* Ajusta este valor para controlar cuánto se "alarga" la imagen */
+    /* Por ejemplo, 90% para que tenga un pequeño margen, o 100% para que toque los bordes */
+    height: auto;
+    /* Mantiene la proporción */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Puedes añadir media queries si necesitas que la imagen se vea diferente en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .hero-main-image {
+        max-width: 95%;
+        /* Un poco más de ancho en móviles */
+    }
+}
+
+/* ======================= */
+/* Secciones de Contenido */
+/* ======================= */
+.features-section,
+.about-us-section,
+.team-section,
+.about-product-section,
+.pricing-section,
+.faq-section {
+    padding: 80px 50px;
+    line-height: 1.6;
+}
+
+/* Fondos de sección alternos */
+.features-section,
+.about-product-section,
+.faq-section {
+    background-color: #e0f2fe;
+}
+
+.about-us-section,
+.team-section,
+.pricing-section {
+    background-color: #FFD59E;
+}
+
+/* Grid de Características */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Misión y Visión */
+/* Misión y Visión */
+.mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.logo-icon-about-us-section {
+    height: 200px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mission-card,
+.vision-card {
+    background-color: #fff;
+    /* Fondo blanco como en la imagen */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+
+    /* === Estilos para la nueva estructura === */
+    display: flex;
+    align-items: center;
+    /* Centra la imagen y el texto verticalmente */
+    gap: 20px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    /* Para que la imagen no se distorsione */
+    border-radius: 8px;
+    /* Bordes ligeramente redondeados en las imágenes */
+}
+
+.card-text {
+    flex: 1;
+    /* Permite que el texto ocupe el espacio restante */
+}
+
+/* Sección Nosotros (Equipo) */
+.team-section p {
+    text-align: center;
+    margin-top: -10px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.team-member-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #f97316;
+}
+
+/* Sección About the Product */
+.about-product-section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.product-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.product-info-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+/* Sección de Precios */
+.pricing-section h2 {
+    text-align: center;
+}
+
+.pricing-toggle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-toggle button {
+    background: none;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.pricing-toggle button.active {
+    background-color: #38bdf8;
+    color: #fff;
+}
+
+.pricing-plans-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.plan-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+}
+
+.plan-card h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 20px;
+}
+
+.periodo {
+    font-size: 0.5em;
+    font-weight: normal;
+    color: #555;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.plan-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan-card li:last-child {
+    border-bottom: none;
+}
+
+.plan-button {
+    background-color: #f97316;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #f15c0e;
+}
+
+/* Sección de Preguntas Frecuentes */
+/* ===================================== */
+/* Sección de Preguntas Frecuentes */
+/* ===================================== */
+
+.faq-section p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    overflow: hidden;
+    /* Esto es clave para la animación de deslizamiento */
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #38bdf8;
+}
+
+.faq-icon {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #38bdf8;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    /* Por defecto, la respuesta estará oculta */
+    max-height: 0;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+}
+
+.faq-answer p {
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+/* Clases que se añadirán con JavaScript */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Un valor lo suficientemente grande para mostrar todo el contenido */
+    padding: 20px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+    /* Gira el '+' para que se vea como una 'x' o un '-' */
+}
+
+/* ======================= */
+/* Pie de página (Footer) */
+/* ======================= */
+.footer {
+    background-color: #2c3e50;
+    /* Color oscuro */
+    color: #fff;
+    padding: 40px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo {
+    font-size: 2em;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.link-column h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-column li {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.link-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-column a:hover {
+    color: #fff;
+}
+
+/* Estilos para el nuevo tagline en el footer */
+.footer-tagline {
+    font-size: 0.5em;
+    color: #ccc;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* ===================================== */
+/* Estilos Responsivos           */
+/* ===================================== */
+
+/* Para tabletas y pantallas más pequeñas (ancho máximo de 992px) */
+@media (max-width: 992px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        /* Oculta los enlaces de navegación */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #38bdf8;
+        position: absolute;
+        top: 60px;
+        /* Debajo del header */
+        left: 0;
+        z-index: 999;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    /* El ícono del menú hamburguesa se mostraría aquí */
+    /* Por ahora, solo ocultamos los enlaces */
+
+    .hero-section {
+        flex-direction: column;
+        padding: 80px 20px;
+    }
+
+    .hero-text,
+    .hero-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .features-grid,
+    .mission-vision-container,
+    .team-grid,
+    .pricing-plans-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mission-vision-container {
+        flex-direction: column;
+    }
+
+    .plan-card {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Para teléfonos móviles (ancho máximo de 576px) */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2em;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-button,
+    .plan-button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodStock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/FoodStock.png" alt="Descripción de la imagen" class="logo-icon">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" data-section="nav" data-value="home">Inicio</a></li>
+                <li><a href="#caracteristicas" data-section="nav" data-value="features">Características</a></li>
+                <li><a href="#quienes-somos" data-section="nav" data-value="who_are_we">¿Quiénes somos?</a></li>
+                <li><a href="#about-product" data-section="nav" data-value="about_product">About the product</a></li>
+                <li><a href="#precios" data-section="nav" data-value="plans">Planes</a></li>
+                <li><a href="#faq" data-section="nav" data-value="faq">Preguntas</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="toggle-lang active" onclick="changeLanguage('es')">Español</button>
+                <button class="toggle-lang" onclick="changeLanguage('en')">Inglés</button>
+            </div>
+        </nav>
+    </header>
+                
+    <main class="main-content">
+        <section id="inicio" class="hero-section">
+                <div class="hero-text">
+                    <img src="images/NameStock.png" alt="Descripción de la imagen" class="logo-icon">
+                    <p data-section="hero" data-value="subtitle1">Gestiona tus ventas e ingredientes</p>
+                    <p data-section="hero" data-value="subtitle2">Optimiza tu inventario y ventas con Foodstock</p>
+                    <button class="cta-button" data-section="hero" data-value="button">Empezar</button>
+                </div>
+                <div class="hero-image-container">
+                    <img src="images/1Food.webp" alt="Plato de comida del restaurante" class="hero-main-image">
+                </div>
+        </section>
+
+        <section id="caracteristicas" class="features-section">
+            <h2 class="section-title" data-section="features" data-value="title">Características</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 data-section="features" data-value="card1_title">Gestión de inventario en tiempo real</h3>
+                    <p data-section="features" data-value="card1_text">Visualiza tus ingredientes y productos disponibles, con actualizaciones automáticas al registrar ventas.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-section="features" data-value="card2_title">Alertas de stock bajo</h3>
+                    <p data-section="features" data-value="card2_text">Recibe notificaciones cuando algún producto esté a punto de agotarse.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-section="features" data-value="card3_title">Reportes y estadísticas</h3>
+                    <p data-section="features" data-value="card3_text">Analiza tus ventas, ingredientes más usados y tendencias en gráficos fáciles de entender.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-section="features" data-value="card4_title">Control de caducidad</h3>
+                    <p data-section="features" data-value="card4_text">Lleva un registro de las fechas de vencimiento para reducir desperdicios.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-section="features" data-value="card5_title">Gestión de proveedores</h3>
+                    <p data-section="features" data-value="card5_text">Guarda tus proveedores y organiza pedidos directamente desde la plataforma.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 data-section="features" data-value="card6_title">Reservaciones inteligentes</h3>
+                    <p data-section="features" data-value="card6_text">Vincula tus reservas con el inventario, asegurando que siempre tengas los ingredientes listos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quienes-somos" class="about-us-section">
+            <h2 class="section-title" data-section="who_we_are" data-value="title">¿Quiénes somos?</h2>
+            <div class="mission-vision-container">
+                <div class="mission-card">
+                    <img src="images/2Food.jpg" alt="Descripción de la imagen" class="logo-icon-about-us-section">
+                    <div class="card-text">
+                        <h3 data-section="who_we_are" data-value="mission_title">Misión</h3>
+                        <p data-section="who_we_are" data-value="mission_text">“Optimizar la gestión de inventarios y ventas en restaurantes y negocios gastronómicos, ofreciendo una plataforma digital sencilla, eficiente y accesible que reduzca pérdidas y aumente la rentabilidad.”</p>
+                    </div>
+                </div>
+                <div class="vision-card">
+                    <img src="images/3Food.jpg" alt="Descripción de la imagen" class="logo-icon-about-us-section">
+                    <div class="card-text">
+                        <h3 data-section="who_we_are" data-value="vision_title">Visión</h3>
+                        <p data-section="who_we_are" data-value="vision_text">“Ser la solución líder en Latinoamérica para la digitalización de negocios gastronómicos, reconocida por su innovación, confiabilidad y apoyo al crecimiento de la industria.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="team-section">
+            <h2 class="section-title" data-section="team" data-value="title">Nosotros</h2>
+            <p data-section="team" data-value="subtitle">Integrantes de FoodStock</p>
+            <div class="team-grid">
+                <div class="team-member-card">
+                    <img src="images/fotoMelina.jpg" alt="Descripción de la imagen" class="team-member-photo">
+                    <h3 data-section="team" data-value="member1_name">Melina Liz Santillan Alvarado</h3>
+                    <p data-section="team" data-value="member1_desc">Soy estudiante de la carrera de Ingeniería de Software en la UPC y tengo 21 años.</p>
+                </div>
+                <div class="team-member-card">
+                    <img src="images/fotoJean.png" alt="Descripción de la imagen" class="team-member-photo">
+                    <h3 data-section="team" data-value="member2_name">Jean Pool Huaman De La Cruz</h3>
+                    <p data-section="team" data-value="member2_desc">Soy estudiante de la carrera de Ingeniería de Software en la UPC y tengo 22 años.</p>
+                </div>
+                <div class="team-member-card">
+                    <img src="images/masaru.jpg" alt="Descripción de la imagen" class="team-member-photo">
+                    <h3 data-section="team" data-value="member3_name">Javier Masaru Nikaido Vargas</h3>
+                    <p data-section="team" data-value="member3_desc">Estudiante de Ingeniería de Software de 5to ciclo de la Universidad Peruana de Ciencias.</p>
+                </div>
+                <div class="team-member-card">
+                    <img src="images/gonzalo.jpg" alt="Descripción de la imagen" class="team-member-photo">
+                    <h3 data-section="team" data-value="member4_name">Gonzalo Samuel Quintanilla Pozo</h3>
+                    <p data-section="team" data-value="member4_desc">Soy estudiante de la carrera de Ingeniería de Software de la UPC y tengo 20 años.</p>
+                </div>
+                <div class="team-member-card">
+                    <img src="images/josemaria.jpg" alt="Descripción de la imagen" class="team-member-photo">
+                    <h3 data-section="team" data-value="member5_name">José María Franco del Carpio</h3>
+                    <p data-section="team" data-value="member5_desc">Soy estudiante de la carrera de Ingeniería de Software de la UPC y tengo 20 años.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-product" class="about-product-section">
+            <h2 class="section-title" data-section="about_product" data-value="title">About the product</h2>
+            <div class="product-info-container">
+                <div class="product-info-text">
+                    <p data-section="about_product" data-value="text1">
+                        FoodStock es una plataforma web diseñada para restaurantes, microempresas y emprendedores gastronómicos que buscan simplificar la gestión de inventario, optimizar ventas y reducir pérdidas por productos perecibles.
+                    </p>
+                    <p data-section="about_product" data-value="text2">
+                        Con FoodStock podrás:
+                        <ul>
+                            <li data-section="about_product" data-value="feature1">Gestionar inventario en tiempo real: visualiza tus insumos, cantidades y fechas de vencimiento.</li>
+                            <li data-section="about_product" data-value="feature2">Obtener reportes automáticos: controla gastos, ventas diarias y desempeño de productos.</li>
+                            <li data-section="about_product" data-value="feature3">Recibir alertas inteligentes: notificaciones de bajo stock y de insumos cercanos a vencer.</li>
+                            <li data-section="about_product" data-value="feature4">Organizar reservas y pedidos: administra clientes y mesas con un calendario integrado.</li>
+                            <li data-section="about_product" data-value="feature5">Facilitar pagos y boletas: integración con medios digitales como Yape, Plin.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="precios" class="pricing-section">
+            <h2 class="section-title" data-section="pricing" data-value="title">Planes</h2>
+            <div class="pricing-toggle">
+                <button class="toggle-monthly active" onclick="showMonthly()" data-section="pricing" data-value="btn_monthly">Mensual</button>
+                <button class="toggle-yearly" onclick="showYearly()" data-section="pricing" data-value="btn_yearly">Anual</button>
+            </div>
+            <div class="pricing-plans-container">
+                <div class="plan-card">
+                    <h3 data-section="pricing" data-value="plan_standard">Estándar</h3>
+                    <p class="price">
+                        $<span class="price-value" data-monthly="5" data-yearly="60">5</span>
+                        <span class="periodo">/mo</span>
+                    </p>
+                    <ul>
+                        <li data-section="pricing" data-value="feature1_standard">Gestión básica de inventario (entradas y salidas).</li>
+                        <li data-section="pricing" data-value="feature2_standard">Alertas de bajo stock y productos próximos a vencer.</li>
+                        <li data-section="pricing" data-value="feature3_standard">Reportes diarios de ventas y gastos.</li>
+                        <li data-section="pricing" data-value="feature4_standard">1 usuario administrador.</li>
+                        <li data-section="pricing" data-value="feature5_standard">Acceso desde web y dispositivos móviles.</li>
+                    </ul>
+                    <button class="plan-button" data-section="pricing" data-value="btn_select">Button</button>
+                </div>
+                <div class="plan-card">
+                    <h3 data-section="pricing" data-value="plan_premium">Premium</h3>
+                    <p class="price">
+                        $<span class="price-value" data-monthly="25" data-yearly="300">25</span>
+                        <span class="periodo">/mo</span>
+                    </p>
+                    <ul>
+                        <li data-section="pricing" data-value="feature1_premium">Todas las funciones del plan Estándar.</li>
+                        <li data-section="pricing" data-value="feature2_premium">Gestión de reservas y calendario de mesas.</li>
+                        <li data-section="pricing" data-value="feature3_premium">Alertas inteligentes avanzadas.</li>
+                        <li data-section="pricing" data-value="feature4_premium">Reportes personalizados.</li>
+                        <li data-section="pricing" data-value="feature5_premium">Generación automática de boletas/facturas.</li>
+                    </ul>
+                    <button class="plan-button" data-section="pricing" data-value="btn_select">Button</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2 class="section-title" data-section="faq" data-value="title">Preguntas frecuentes</h2>
+            <p data-section="faq" data-value="subtitle">Respuestas rápidas a tus consultas</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-section="faq" data-value="q1">¿Qué es FoodStock?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-section="faq" data-value="a1">Foodstock es una plataforma digital que ayuda a emprendedores y microempresas a gestionar su inventario, ventas y reservas de manera rápida y sencilla.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-section="faq" data-value="q2">¿Necesito conocimientos técnicos para usar FoodStock?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-section="faq" data-value="a2">No, la plataforma está diseñada para ser intuitiva y fácil de usar, sin necesidad de conocimientos técnicos avanzados.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-section="faq" data-value="q3">¿FoodStock funciona en celular?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-section="faq" data-value="a3">Sí, la aplicación es responsive y se adapta perfectamente a dispositivos móviles.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-section="faq" data-value="q4">¿Qué pasa si tengo varios usuarios en mi negocio?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-section="faq" data-value="a4">El plan premium permite múltiples usuarios para que tu equipo pueda colaborar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-section="faq" data-value="q5">¿Cómo me avisa la plataforma cuando un producto está por vencer?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-section="faq" data-value="a5">La plataforma envía notificaciones automáticas por correo electrónico o dentro de la aplicación cuando la fecha de vencimiento de un producto está próxima.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p data-section="footer" data-value="logo">FoodStock</p>
+                <p class="footer-tagline" data-section="footer" data-value="tagline">Optimiza la gestión de tu negocio con una plataforma digital simple, rápida y confiable.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4 data-section="footer" data-value="platform_title">Plataforma</h4>
+                    <ul>
+                        <li><a href="#" data-section="footer" data-value="platform_link1">Cómo funciona</a></li>
+                        <li><a href="#" data-section="footer" data-value="platform_link2">Servicios</a></li>
+                        <li><a href="#precios" data-section="footer" data-value="platform_link3">Precios</a></li>
+                        <li><a href="#faq" data-section="footer" data-value="platform_link4">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4 data-section="footer" data-value="company_title">Empresa</h4>
+                    <ul>
+                        <li><a href="#quienes-somos" data-section="footer" data-value="company_link1">Sobre nosotros</a></li>
+                        <li><a href="#quienes-somos" data-section="footer" data-value="company_link2">Misión y Visión</a></li>
+                        <li><a href="#nosotros" data-section="footer" data-value="company_link3">Equipo</a></li>
+                        <li><a href="#" data-section="footer" data-value="company_link4">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4 data-section="footer" data-value="legal_title">Legal</h4>
+                    <ul>
+                        <li><a href="#" data-section="footer" data-value="legal_link1">Términos y servicios</a></li>
+                        <li><a href="#" data-section="footer" data-value="legal_link2">Política de Privacidad</a></li>
+                        <li><a href="#" data-section="footer" data-value="legal_link3">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
